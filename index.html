@@ -1,134 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Undergraduate Program</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example">
+    <title>Pizza System</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Create two unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+        column-width: auto;
+      }
+      
+      .left {
+        width: 20%;
+      }
+      
+      .right {
+        width: 80%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
+      /* Footer */
+      footer {
+        padding: 10px 20px;
+        background: #333;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- Nav Code -->
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="undergrad.html">Undergraduate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="contactPG.html">Contact Us</a>
-            </li>
-          </ul>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a class="nav-link " href="menu.html">Menu</a>
+        <div class="topnav-right">
+          <a href="./signUp.html">Sign Up</a>
+          <a href="./login.html">Login</a>
         </div>
       </div>
+
     </nav>
-
-<!-- body Code -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Department of Information Systems</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Welcome to the Department of Information Systems at UMBC. Our interdisciplinary program helps students develop in demand skills, preparing them for careers in IT and IS. 
-          Located near technology hubs and the action of big cities, our suburban campus is an exciting place to be for students in tech. 
-          With a variety of degree programs to choose from, we offer programs designed to give you options for applying information systems to your career. 
-          To learn more, please contact us with any questions.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-warning btn-lg px-4 me-sm-3">Program</button>
-          <button type="button" class="btn btn-dark btn-lg px-4">Contact Us</button>
-        </div>
+    <div class="row">
+      <div class="column left" style="background-color:#95e7a9;">
+        <h2>Address</h2>
+        <h4>1234 Delivery Rd</h4>
+        <h4>Baltimore, MD 21228</h4>
+        <h4>(443) 387-9872</h4>
+        <h2>Hour</h2>
+        <h3>Pick-Up Hours</h3>
+        <ul>
+          <li>Monday-Thursday: 11am-10pm</li>
+          <li>Friday: 9am-1am</li>
+          <li>Saturday-Sunday: 10am-1am</li>
+        </ul>
+        <h3>Online Hours</h3>
+        <h4>24/7</h4>
+        <h2>About Us</h2>
+        <h3>We are accomodate to all your food need.</h3>
+        <ul>
+          <li>Keto</li>
+          <li>Halal</li>
+          <li>Pescitarian</li>
+          <li>Vegetarian</li>
+        </ul>
       </div>
-     
+      <div class="column right" style="background-color:#ffff97;">
+        <h1>Home is where the food is </h1>
+        <div class="restaurant_dets">
+          <h3 class="mt20" >Our Restaurant <span class="shade-left">&nbsp;</span></h3>
+            <div class="pt10" > Reteriver's Pizza is in the heart of Catonsville,
+              Maryland providing pizza delivery to all of our nearby friends & family.
+              As UMBC almus we have a special place in our hearts for all the students
+              staying up late and pulling all nighters, we pride oursleves on staying
+              open late and bringing food to fuel to all reterivers in need.
+            </div>
+        </div>
+        <h1>Retriever Delivery System</h1>
+        <h2>Todays Favorite Deals</h2>
+        <h3>Vegetarian</h3>
+        <img src="vegetarian.jpg" alt="Vegetarian">
+        <div class="pt10">Customer Favorite: Vegetarian</div>
+        <div class="pt10"></div>Pizza base, Marinara Sauce, Mozzarella Cheese, onion, bell peper, corn, and a nice
+          sprinkly of parmesan on top.</div>
+
+      </div>
     </div>
 
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          
-          <div class="card">
-            <div class="card-header">
-              Contact and Location
-            </div>
-            <div class="card-body">
-              <p class="card-text">Contacts:</p>
-              <p class="card-text"><a href="https://www.facebook.com/IsDepartmentAtUmbc/">Facebook</a></p>
-              <p class="card-text"><a href="https://twitter.com/umbcinfosystems">Twitter</a></p>
-              <p class="card-text">Location:</p>
-              <p class="card-text">ITE Building- Suite 404</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          
-          <h5>Respect & Ranked</h5>
-          <p>UMBC consistently receives recognition for our value, impact, and innovation. More on UMBC Rankings can be found here.</p>
-        </div>
-        <div class="col-sm-4">
-          
-          <div class="card">
-            <div class="card-header">
-              Areas of Research
-            </div>
-            <div class="card-body">
-              <ul class="card-text">
-                <li class="card-text">AI and Machine Learning</li>
-                <li class="card-text">Data Science</li>
-                <li class="card-text">Health Informatics</li>
-                <li class="card-text">Human-Computer Interaction</li>
-                <li class="card-text">Software Engineer</li>
-              </ul class="card-text">
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-<!-- Footer Code -->
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
-        <div class="col-12 col-md">
-         
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Career Center</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Events</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Get Help</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">News</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Visit Campus</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Work at UMBC</a></li>
-           
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Important Contacts</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Online Directory</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Contact UMBC</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Request Support</a></li>
-           
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Emergency Info</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">UMBC Police: 410-455-555</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Sign Up for Text Alerts</a></li>
-           
-          </ul>
-        </div>
-      </div>
-    </footer>
   </body>
+
+  <footer>
+    <p>Retiever Delivery System © 2023. All rights reserved.</p>
+  </footer>
 </html>
